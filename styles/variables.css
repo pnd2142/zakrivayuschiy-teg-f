@@ -1,1 +1,27 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+
+  --weight-article-title: 715; /*Вес заголовка карточки*/
+  --weight-article-text: 410; /*Вес текста карточки*/
+
+  --gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+
+    --width-inline: clamp(375px, 260.56px + 30.52vw, 700px);
+    --header-title-size: clamp(49px, 43.37px + 1.50vw, 65px);
+    --headder-text-size: clamp(14px, 10.83px + 0.85vw, 23px);
+}

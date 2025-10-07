@@ -13,4 +13,140 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font, "Inter-Variable"), sans-serif;
+  font-variation-settings: "wght" var(--weight-article-text, 410);
+  background-image: var(--gradient);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  max-inline-size: 700px;
+  background-color: #fff;
+  margin-inline: auto;
+  margin-block: 100px;
+  padding-inline: clamp(16px, calc(-106.885px + 32.769vw), 122.5px);
+  padding-block: clamp(122px, calc(112.769px + 2.462vw), 130px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.width-inline {
+  inline-size: var(--width-inline);
+}
+
+.header__title {
+  font-family: var(--accent-font, "PressStart2P");
+  font-size: var(--header-title-size, clamp(49px, 43.37px + 1.5vw, 65px));
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.header__text {
+  font-family: var(--accent-font, "PressStart2P");
+  font-size: var(--headder-text-size, clamp(14px, 10.83px + 0.85vw, 23px));
+  line-height: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main {
+  max-inline-size: 700px;
+  margin-inline: auto;
+}
+
+.card-list {
+  display: grid;
+  gap: 50px;
+}
+
+.card {
+  background-color: #fff;
+  margin-inline: auto;
+}
+
+.card__title {
+  font-variation-settings: "wght" var(--weight-article-title, 715);
+  padding-inline-start: 10px;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 4px 10px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: var(--accent-font, "PressStart2P");
+  font-size: 14px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #fff;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+}
+
+.card__image {
+  display: block;
+  inline-size: 100%;
+}
+
+.card__text {
+  margin: 25px;
+  font-size: 18px;
+  line-height: calc(21px / 18px);
+}
+
+.button {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
+
+.border {
+  border: 2px solid #000;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  gap: 6px;
+  margin: 0 25px 25px 0;
+}
+
+.card__like-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 130px;
+  block-size: 38px;
+}
+
+.button__text {
+  font-family: var(--accent-font, "PressStart2P");
+  font-size: 14px;
+  line-height: 0.9;
+}
+
+.button-memory {
+  display: block;
+  margin: 50px auto 100px;
+  background-color: #fff;
+  block-size: ;
+}
+
+@supports (text-stroke: 1px #fff) {
+  .img-label {
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+    text-shadow: 1px #fff;
+  }
 }
