@@ -40,14 +40,14 @@
 }
 
 .header__title {
-  font-family: var(--accent-font, "PressStart2P");
+  font-family: var(--accent-font, "PressStart2P"), sans-serif;
   font-size: var(--header-title-size, clamp(49px, 43.37px + 1.5vw, 65px));
   line-height: 100%;
   font-weight: 400;
 }
 
 .header__text {
-  font-family: var(--accent-font, "PressStart2P");
+  font-family: var(--accent-font, "PressStart2P"), sans-serif;
   font-size: var(--headder-text-size, clamp(14px, 10.83px + 0.85vw, 23px));
   line-height: 100%;
   font-weight: 400;
@@ -85,13 +85,14 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--accent-font, "PressStart2P");
+  font-family: var(--accent-font, "PressStart2P"), sans-serif;
   font-size: 14px;
   line-height: 0.9;
   text-transform: uppercase;
   -webkit-text-stroke: 1px #fff;
   mix-blend-mode: hard-light;
   opacity: 0.5;
+  z-index: 1;
 }
 
 .card__image {
@@ -131,16 +132,104 @@
 }
 
 .button__text {
-  font-family: var(--accent-font, "PressStart2P");
+  font-family: var(--accent-font, "PressStart2P"), sans-serif;
   font-size: 14px;
   line-height: 0.9;
 }
 
+.svg-memory {
+  block-size: 21px;
+  inline-size: 21px;
+}
+
 .button-memory {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   margin: 50px auto 100px;
+  block-size: 53px;
+  inline-size: 333px;
   background-color: #fff;
-  block-size: ;
+}
+
+.dialog {
+  max-inline-size: 351px;
+  inline-size: clamp(339px, 334.77px + 1.13vw, 351px);
+  margin: auto;
+  padding: 0;
+}
+
+.svg-dialog {
+  block-size: 39px;
+  inline-size: 39px;
+}
+
+.dialog-description {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  padding-block: 30px;
+  padding-inline: 30px;
+}
+
+.dialog-text {
+  font-family: var(--accent-font, "PressStart2P"), sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.button-dialog {
+  margin-block: 0 30px;
+  margin-inline: 26px;
+}
+
+.button__text-dialog {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10.5px;
+  padding-inline: clamp(114.5px, 108.87px + 1.50vw, 130.5px);
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.page:has(.dialog[open]) {
+  overflow: hidden;
+}
+
+.clear-list {
+  filter: saturate(150%);
+}
+
+.saturate {
+  filter: saturate(390%)
+}
+
+.grayscale {
+  filter: grayscale(80%);
+}
+
+.invert {
+  filter: invert(68%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(0.6turn);
+}
+
+.sepia {
+  filter: sepia(0.9);
+  z-index: 0;
+}
+
+.contrast-blur {
+  filter: contrast(350%) blur(3px);
 }
 
 @supports (text-stroke: 1px #fff) {
@@ -148,5 +237,18 @@
     -webkit-text-stroke: 1px #fff;
     text-stroke: 1px #fff;
     text-shadow: 1px #fff;
+  }
+}
+
+@media (width <= 375px) {
+  .button-memory {
+    flex-direction: column;
+    block-size: 82px;
+    inline-size: 304px;
+  }
+
+  .svg-memory {
+    block-size: 28px;
+    inline-size: 28px;
   }
 }
