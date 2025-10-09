@@ -1,7 +1,7 @@
 :root {
   --main-font: "Inter-Variable";
   --accent-font: "PressStart2P";
-
+  --button-text-color: #fff;
   --weight-article-title: 715; /*Вес заголовка карточки*/
   --weight-article-text: 410; /*Вес текста карточки*/
 
@@ -24,4 +24,8 @@
     --width-inline: clamp(375px, 260.56px + 30.52vw, 700px);
     --header-title-size: clamp(49px, 43.37px + 1.50vw, 65px);
     --headder-text-size: clamp(14px, 10.83px + 0.85vw, 23px);
+
+    --contour: #000;
+    --animation-fill-color: red;
+    
 }
