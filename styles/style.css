@@ -110,6 +110,7 @@
   background-color: inherit;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .border {
@@ -279,11 +280,11 @@
 
 .card__icon-button {
   transition: outline 0.3s ease;
-  block-size: 38px;
+  block-size: 36px;
   inline-size: 39px;
-  object-fit: cover;
+  /* object-fit: cover;
   object-position: center;
-  overflow: hidden;
+  overflow: hidden; */
   padding: 0;
 }
 
@@ -295,11 +296,10 @@
   outline: 2px solid currentColor;
 }
 
-/*Для анимаций*/
+/*АНИМАЦИИ*/
 
 .sparks {
   opacity: 0;
-  animation: opacitySparks 0.3s 0.3s 1 ease-in;
 }
 
 .contour {
@@ -315,8 +315,7 @@
 }
 
 .like-icon {
-  transform-origin: center;
-  cursor: pointer;
+  /* transform-origin: center; */
 }
 
 .like-icon:hover .core {
@@ -355,17 +354,13 @@
 }
 
 .like-icon.is-liked .heart {
+  transform-origin: center;
   animation: scaleHeart 0.3s 0.1s ease-in 1;
 }
 
 .like-icon.is-liked .sparks {
   animation: opacitySparks 0.3s 0.3s ease-in 1;
 }
-
-
-
-
-
 
 @supports (text-stroke: 1px #fff) {
   .img-label {
