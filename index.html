@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header border width-inline">
+    <header class="header width-inline">
       <h1 class="header__title">&lt;/HTML&gt;</h1>
       <p class="header__text">закрывающий тег</p>
     </header>
     <main class="main">
       <ul class="card-list">
-        <li class="card border width-inline">
+        <li class="card width-inline">
           <h2 class="card__title">
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
@@ -29,6 +29,7 @@
             <img
               src="./images/car.png"
               class="card__image"
+              loading="lazy"
               alt="Пиксель-арт фуд-трака ночью с белым кузовом, оранжево-красными акцентами, открытым окном и звездным фиолетовым небом."
             />
           </div>
@@ -42,7 +43,11 @@
             профессии лучшего момента и не придумать. И вот я решился.
           </p>
           <div class="button-container">
-            <button type="button" class="button card__icon-button">
+            <button
+              type="button"
+              class="card__icon-button"
+              aria-label="Кнопка лайка: иконка в форме сердца, которая заполняется красным цветом и анимируется при нажатии, обозначая лайк или добавление в избранное. Повторное нажатие отменяет лайк."
+            >
               <svg
                 width="39"
                 height="36"
@@ -75,18 +80,21 @@
                 />
               </svg>
             </button>
-            <button type="button" class="button card__like-button border">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
-        <li class="card border width-inline">
+        <li class="card width-inline">
           <h2 class="card__title">1 спринт: Я — чистый лист</h2>
           <div class="img-container">
-            <span class="img-label">Начало чего-то большего</span>
+            <span class="img-label" aria-hidden="true"
+              >Начало чего-то большего</span
+            >
             <img
               src="./images/car.png"
-              class="card__image clear-list"
+              class="card__image filter-saturate-grayscale"
+              loading="lazy"
               alt="Пиксель-арт фуд-трака ночью с белым кузовом, оранжево-красными акцентами, открытым окном и звездным фиолетовым небом."
             />
           </div>
@@ -102,7 +110,11 @@
             интересное.
           </p>
           <div class="button-container">
-            <button type="button" class="button card__icon-button">
+            <button
+              type="button"
+              class="card__icon-button"
+              aria-label="Кнопка лайка: иконка в форме сердца, которая заполняется красным цветом и анимируется при нажатии, обозначая лайк или добавление в избранное. Повторное нажатие отменяет лайк."
+            >
               <svg
                 width="39"
                 height="36"
@@ -135,18 +147,21 @@
                 />
               </svg>
             </button>
-            <button type="button" class="button card__like-button border">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
-        <li class="card border width-inline">
+        <li class="card width-inline">
           <h2 class="card__title">1 спринт: А если не получится?</h2>
           <div class="img-container">
-            <span class="img-label">Эмоциональные качели :)</span>
+            <span class="img-label" aria-hidden="true"
+              >Эмоциональные качели :)</span
+            >
             <img
               src="./images/car.png"
-              class="card__image invert"
+              class="card__image filter-invert"
+              loading="lazy"
               alt="Пиксель-арт фуд-трака ночью с белым кузовом, оранжево-красными акцентами, открытым окном и звездным фиолетовым небом."
             />
           </div>
@@ -160,7 +175,11 @@
             длилось недолго...
           </p>
           <div class="button-container">
-            <button type="button" class="button card__icon-button">
+            <button
+              type="button"
+              class="card__icon-button"
+              aria-label="Кнопка лайка: иконка в форме сердца, которая заполняется красным цветом и анимируется при нажатии, обозначая лайк или добавление в избранное. Повторное нажатие отменяет лайк."
+            >
               <svg
                 width="39"
                 height="36"
@@ -193,18 +212,21 @@
                 />
               </svg>
             </button>
-            <button type="button" class="button card__like-button border">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
-        <li class="card border width-inline">
+        <li class="card width-inline">
           <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
           <div class="img-container">
-            <span class="img-label">Просто примите мою работу</span>
+            <span class="img-label" aria-hidden="true"
+              >Просто примите мою работу</span
+            >
             <img
               src="./images/car.png"
-              class="card__image hue-rotate"
+              class="card__image filter-hue-rotate"
+              loading="lazy"
               alt="Пиксель-арт фуд-трака ночью с белым кузовом, оранжево-красными акцентами, открытым окном и звездным фиолетовым небом."
             />
           </div>
@@ -220,7 +242,11 @@
             мыслей в голове, хочется сделать всё и сразу. И на этом я выгорел.
           </p>
           <div class="button-container">
-            <button type="button" class="button card__icon-button">
+            <button
+              type="button"
+              class="card__icon-button"
+              aria-label="Кнопка лайка: иконка в форме сердца, которая заполняется красным цветом и анимируется при нажатии, обозначая лайк или добавление в избранное. Повторное нажатие отменяет лайк."
+            >
               <svg
                 width="39"
                 height="36"
@@ -253,18 +279,19 @@
                 />
               </svg>
             </button>
-            <button type="button" class="button card__like-button border">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
-        <li class="card border width-inline">
+        <li class="card width-inline">
           <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
           <div class="img-container">
-            <span class="img-label">Я не один</span>
+            <span class="img-label" aria-hidden="true">Я не один</span>
             <img
               src="./images/car.png"
-              class="card__image grayscale"
+              class="card__image filter-grayscale"
+              loading="lazy"
               alt="Пиксель-арт фуд-трака ночью с белым кузовом, оранжево-красными акцентами, открытым окном и звездным фиолетовым небом."
             />
           </div>
@@ -282,7 +309,11 @@
             вместе - сила!"
           </p>
           <div class="button-container">
-            <button type="button" class="button card__icon-button">
+            <button
+              type="button"
+              class="card__icon-button"
+              aria-label="Кнопка лайка: иконка в форме сердца, которая заполняется красным цветом и анимируется при нажатии, обозначая лайк или добавление в избранное. Повторное нажатие отменяет лайк."
+            >
               <svg
                 width="39"
                 height="36"
@@ -315,18 +346,19 @@
                 />
               </svg>
             </button>
-            <button type="button" class="button card__like-button border">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
-        <li class="card border width-inline">
+        <li class="card width-inline">
           <h2 class="card__title">3 спринт: Обходные стратегии</h2>
           <div class="img-container">
-            <span class="img-label">Жестко думою</span>
+            <span class="img-label" aria-hidden="true">Жестко думою</span>
             <img
               src="./images/car.png"
-              class="card__image sepia"
+              class="card__image filter-sepia"
+              loading="lazy"
               alt="Пиксель-арт фуд-трака ночью с белым кузовом, оранжево-красными акцентами, открытым окном и звездным фиолетовым небом."
             />
           </div>
@@ -342,7 +374,11 @@
             задавался вопросом: "А правильно ли я вообще делаю?".
           </p>
           <div class="button-container">
-            <button type="button" class="button card__icon-button">
+            <button
+              type="button"
+              class="card__icon-button"
+              aria-label="Кнопка лайка: иконка в форме сердца, которая заполняется красным цветом и анимируется при нажатии, обозначая лайк или добавление в избранное. Повторное нажатие отменяет лайк."
+            >
               <svg
                 width="39"
                 height="36"
@@ -375,18 +411,21 @@
                 />
               </svg>
             </button>
-            <button type="button" class="button card__like-button border">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
-        <li class="card border width-inline">
+        <li class="card width-inline">
           <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
           <div class="img-container">
-            <span class="img-label">Tatakae © Эрен Егер </span>
+            <span class="img-label" aria-hidden="true"
+              >Tatakae © Эрен Егер
+            </span>
             <img
               src="./images/car.png"
-              class="card__image saturate"
+              class="card__image filter-saturate"
+              loading="lazy"
               alt="Пиксель-арт фуд-трака ночью с белым кузовом, оранжево-красными акцентами, открытым окном и звездным фиолетовым небом."
             />
           </div>
@@ -408,7 +447,11 @@
             переборол себя.
           </p>
           <div class="button-container">
-            <button type="button" class="button card__icon-button">
+            <button
+              type="button"
+              class="card__icon-button"
+              aria-label="Кнопка лайка: иконка в форме сердца, которая заполняется красным цветом и анимируется при нажатии, обозначая лайк или добавление в избранное. Повторное нажатие отменяет лайк."
+            >
               <svg
                 width="39"
                 height="36"
@@ -441,18 +484,19 @@
                 />
               </svg>
             </button>
-            <button type="button" class="button card__like-button border">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
-        <li class="card border width-inline">
+        <li class="card width-inline">
           <h2 class="card__title">«Сейчас я здесь»</h2>
           <div class="img-container">
-            <span class="img-label">Дорога дальняя</span>
+            <span class="img-label" aria-hidden="true">Дорога дальняя</span>
             <img
               src="./images/car.png"
-              class="card__image contrast-blur"
+              class="card__image filter-contrast-blur"
+              loading="lazy"
               alt="Пиксель-арт фуд-трака ночью с белым кузовом, оранжево-красными акцентами, открытым окном и звездным фиолетовым небом."
             />
           </div>
@@ -469,7 +513,10 @@
             моего прекрасного пути...
           </p>
           <div class="button-container">
-            <button class="button card__icon-button">
+            <button
+              class="card__icon-button"
+              aria-label="Кнопка лайка: иконка в форме сердца, которая заполняется красным цветом и анимируется при нажатии, обозначая лайк или добавление в избранное. Повторное нажатие отменяет лайк."
+            >
               <svg
                 width="39"
                 height="36"
@@ -502,7 +549,7 @@
                 />
               </svg>
             </button>
-            <button type="button" class="button card__like-button border">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -512,7 +559,7 @@
         type="button"
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id"
-        class="button button-memory border"
+        class="button button-memory"
       >
         <svg viewBox="0 0 40 40" class="svg-memory">
           <use href="./svg/disketa.svg#disketa"></use>
@@ -530,7 +577,7 @@
         <button
           type="button"
           onclick="window['dialog-id'].close()"
-          class="button button-dialog border"
+          class="button button-dialog"
         >
           <span class="button__text button__text-dialog">Ок</span>
         </button>
