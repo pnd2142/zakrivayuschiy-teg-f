@@ -65,6 +65,7 @@
 .img-container {
   position: relative;
   outline: 2px solid #000;
+  aspect-ratio: 1 / 1;
 }
 
 .img-label {
@@ -75,7 +76,7 @@
   font-size: 14px;
   line-height: 0.9;
   text-transform: uppercase;
-  -webkit-text-stroke: 1px #fff;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
   mix-blend-mode: hard-light;
   opacity: 0.5;
   z-index: 1;
@@ -334,7 +335,7 @@
   .img-label {
     -webkit-text-stroke: 1px #fff;
     text-stroke: 1px #fff;
-    text-shadow: 1px #fff;
+    text-shadow: none;
   }
 }
 
